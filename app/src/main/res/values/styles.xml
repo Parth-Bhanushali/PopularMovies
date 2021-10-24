@@ -1,0 +1,58 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
+    </style>
+
+    <!-- Theme for MainActivity -->
+    <style name="NoActionBarTheme" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="DetailsActivityTheme" parent="NoActionBarTheme">
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="MessageTextStyle">
+        <item name="android:textColor">@color/colorSecondaryText</item>
+        <item name="android:layout_marginLeft">48dp</item>
+        <item name="android:layout_marginRight">48dp</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="DetailFragmentButtonStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:textSize">@dimen/details_fragment_button_text_size</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="HeaderTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/details_fragment_header_text_size</item>
+        <item name="android:textColor">@color/colorPrimaryText</item>
+    </style>
+    
+    <style name="DetailFragmentRecyclerViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:nestedScrollingEnabled">false</item>
+    </style>
+
+    <style name="RetryButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:backgroundTint">@color/colorRetryButton</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:text">@string/retry_button_text</item>
+    </style>
+</resources>

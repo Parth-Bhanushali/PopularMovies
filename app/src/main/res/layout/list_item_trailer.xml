@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <ImageView
+        android:id="@+id/trailer_thumbnail"
+        android:layout_width="@dimen/trailer_thumbnail_width"
+        android:layout_height="@dimen/trailer_thumbnail_height"
+        android:background="@color/colorImagePlaceholder"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/trailer_thumbnail" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_play_circle_outline_black_32dp" />
+</FrameLayout>

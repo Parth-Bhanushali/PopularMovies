@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Array of Entries for sort order of movies {@link MainActivity} -->
+    <string-array name="sort_order_entries">
+        <item>@string/entry_sort_order_popular</item>
+        <item>@string/entry_sort_order_top_rated</item>
+        <item>@string/entry_sort_order_favorites</item>
+    </string-array>
+
+    <!-- Array of Entries values for sort order of movies {@link MainActivity} -->
+    <string-array name="sort_order_values">
+        <item>@string/value_sort_order_popular</item>
+        <item>@string/value_sort_order_top_rated</item>
+        <item>@string/value_sort_order_favorites</item>
+    </string-array>
+</resources>

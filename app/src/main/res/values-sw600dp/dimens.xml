@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="collapsing_toolbar_height">410dp</dimen>
+    <dimen name="scrim_topdown_height">110dp</dimen>
+    <dimen name="scrim_bottom_height">220dp</dimen>
+    <dimen name="details_fragment_poster_iv_width">170dp</dimen>
+    <dimen name="details_fragment_extra_space_from_poster">5dp</dimen>
+    <dimen name="details_fragment_title_text_size">25sp</dimen>
+    <dimen name="details_fragment_button_text_size">16sp</dimen>
+    <dimen name="details_fragment_date_text_size">19sp</dimen>
+    <dimen name="details_fragment_header_text_size">20sp</dimen>
+    <dimen name="details_fragment_overview_text_size">16sp</dimen>
+    <dimen name="trailer_thumbnail_width">190dp</dimen>
+    <dimen name="trailer_thumbnail_height">140dp</dimen>
+    <dimen name="review_text_size">16sp</dimen>
+    <dimen name="internet_error_text_size">28sp</dimen>
+    <dimen name="internet_error_iv_width">400dp</dimen>
+    <dimen name="internet_error_iv_height">310dp</dimen>
+    <dimen name="no_movies_iv_size">210dp</dimen>
+    <dimen name="no_movies_text_size">26sp</dimen>
+</resources>

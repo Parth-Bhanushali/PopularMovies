@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="collapsing_toolbar_height">330dp</dimen>
+    <dimen name="details_fragment_default_padding">24dp</dimen>
+    <dimen name="internet_error_iv_width">220dp</dimen>
+    <dimen name="internet_error_iv_height">160dp</dimen>
+</resources>

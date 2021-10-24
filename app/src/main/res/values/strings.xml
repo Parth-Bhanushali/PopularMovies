@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">Popular Movies</string>
+
+    <!-- Label of Settings activity -->
+    <string name="label_activity_settings">Settings</string>
+
+    <!-- Keys for storing and retaining state from savedInstanceState (MoviesFragment) -->
+    <string name="key_loader_has_finished_loading" translatable="false">has_finished_loading</string>
+    <string name="key_pages_finished" translatable="false">pages_finished</string>
+    <string name="key_loading_indicator_was_there" translatable="false">indicator_was_there</string>
+    <string name="key_container_error_visibility" translatable="false">container_error_visibility</string>
+    <string name="key_internet_error_occurred" translatable="false">internet_error_occurred</string>
+    <string name="key_is_recyclerview_scrollable" translatable="false">is_recyclerview_scrollable</string>
+
+    <!-- Keys for storing and retaining state from savedInstanceState (MovieDetailsActivity) -->
+    <string name="key_color_statusbar" translatable="false">color_statusbar</string>
+    <string name="key_color_collapsing_toolbar" translatable="false">color_collapsing_toolbar</string>
+
+    <!-- Keys for storing and retaining state from savedInstanceState (MovieDetailFragment) -->
+    <string name="key_trailers" translatable="false">trailers</string>
+    <string name="key_reviews" translatable="false">reviews</string>
+    <string name="key_poster" translatable="false">poster_bitmap</string>
+
+    <!-- - - - - - - - - - - - Sort order list preference - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- Key for sort order preference-->
+    <string name="key_movies_sort_order" translatable="false">sort_order</string>
+    <!-- Title for sort order preference-->
+    <string name="pref_title_sort_order">Sort by</string>
+
+    <!-- Entries and co-responding values & summaries for list preferences -->
+    <string name="entry_sort_order_popular">Most Popular</string>
+    <string name="value_sort_order_popular" translatable="false">popular</string>
+    <string name="summary_sort_order_popular">@string/entry_sort_order_popular</string>
+
+    <string name="entry_sort_order_top_rated">Highest Rated</string>
+    <string name="value_sort_order_top_rated" translatable="false">top_rated</string>
+    <string name="summary_sort_order_top_rated">@string/entry_sort_order_top_rated</string>
+
+    <string name="entry_sort_order_favorites">Favorites</string>
+    <string name="value_sort_order_favorites" translatable="false">favorites</string>
+    <string name="summary_sort_order_favorites">@string/entry_sort_order_favorites</string>
+
+    <!-- Default value for sort order preference -->
+    <string name="default_value_sort_order">@string/value_sort_order_popular</string>
+    <!-- -  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+
+    <!-- Titles for items in moviesfragment -->
+    <string name="action_settings">Settings</string>
+
+    <!-- Strings used in all(other) UI parts-->
+    <string name="retry_button_text">Retry</string>
+    <string name="internet_error_text">Can\'t connect to the internet!</string>
+    <string name="no_movies_text">No movies found :(</string>
+    <string name="fav_button_mark_as_favourite">Mark as Favourite</string>
+    <string name="fav_button_remove_from_favorites">Remove from Favorites</string>
+    <string name="watch_trailer_button_text">Watch Trailer</string>
+    <string name="header_overview">Overview:</string>
+    <string name="header_reviews">Reviews:</string>
+    <string name="pages_finished_message">No more movies available</string>
+    <string name="browser_not_installed_message">No valid web browser found</string>
+    <string name="review_author_name" translatable="false">- %s</string>
+    <string name="movie_released_date">Released on: %s</string>
+</resources>

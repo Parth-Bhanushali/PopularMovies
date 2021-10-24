@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#8e24aa</color>
+    <color name="colorPrimaryDark">#6a1b9a</color>
+    <color name="colorAccent">#ab47bc</color>
+
+    <!--Background color for poster/backdrop imageviews as a placeholder-->
+    <color name="colorImagePlaceholder">#dddddd</color>
+
+    <color name="detailsPreCollapsingToolbarBackgroundColor">#ADA9A9</color>
+    <color name="detailsPreStatusBarColor">#8F8B8B</color>
+
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorSecondaryText">#757575</color>
+    <color name="colorDivider">#BDBDBD</color>
+
+    <color name="colorTrailerButtonEnabled">#008577</color>
+    <color name="colorTrailerButtonDisabled">#4F008577</color>
+    <color name="colorButtonDisabledText">#FAF8F8</color>
+
+    <color name="colorRetryButton">#ba68c8</color>
+</resources>

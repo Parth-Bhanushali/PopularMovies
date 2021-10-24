@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:padding="@dimen/details_fragment_default_padding"
+    tools:context=".Fragments.MovieDetailFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.example.android.popularmovies_project.UI.ProportionalImageView
+            android:id="@+id/detail_poster"
+            android:layout_width="@dimen/details_fragment_poster_iv_width"
+            android:layout_height="wrap_content"
+            android:background="@color/colorImagePlaceholder"
+            android:elevation="@dimen/details_fragment_elevation"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/movie_poster" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/details_fragment_extra_space_from_poster"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/detail_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="4dp"
+                android:ellipsize="end"
+                android:fontFamily="serif"
+                android:maxLines="@integer/movie_title_max_lines"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/details_fragment_title_text_size"
+                android:textStyle="bold"
+                tools:text="Interstellar" />
+
+            <include
+                layout="@layout/rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginBottom="12dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Correct Behaviour -->
+                <Button
+                    android:id="@+id/detail_button_favourite"
+                    style="@style/DetailFragmentButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:backgroundTint="@android:color/holo_red_light"
+                    android:ems="@integer/favourite_button_ems"
+                    android:text="@string/fav_button_mark_as_favourite" />
+
+                <Button
+                    android:id="@+id/detail_button_watch_trailer"
+                    style="@style/DetailFragmentButtonStyle"
+                    android:layout_width="match_parent"
+                    android:text="@string/watch_trailer_button_text"
+                    tools:backgroundTint="@color/colorTrailerButtonEnabled" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/detail_release_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/colorSecondaryText"
+        android:textSize="@dimen/details_fragment_date_text_size"
+        android:textStyle="italic|bold"
+        tools:text="Released on: 28 May, 2019." />
+
+    <TextView
+        android:id="@+id/detail_overview_header"
+        style="@style/HeaderTextStyle"
+        android:text="@string/header_overview" />
+
+    <TextView
+        android:id="@+id/detail_overview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorSecondaryText"
+        android:textSize="@dimen/details_fragment_overview_text_size"
+        tools:text="During the 1980s, a failed stand-up comedian is driven insane and turns to a life of crime and chaos in Gotham City while becoming an infamous psychopathic crime figure." />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/trailer_recycler_view"
+        style="@style/DetailFragmentRecyclerViewStyle"
+        android:layout_marginTop="16dp"
+        android:minHeight="@dimen/trailer_thumbnail_height"
+        android:overScrollMode="never"
+        tools:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        tools:listitem="@layout/list_item_trailer"
+        tools:orientation="horizontal" />
+
+    <TextView
+        android:id="@+id/detail_reviews_header"
+        style="@style/HeaderTextStyle"
+        android:layout_marginTop="16dp"
+        android:text="@string/header_reviews" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/review_recycler_view"
+        style="@style/DetailFragmentRecyclerViewStyle"
+        android:layout_marginTop="4dp"
+        android:overScrollMode="never"
+        tools:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        tools:orientation="vertical" />
+</LinearLayout>

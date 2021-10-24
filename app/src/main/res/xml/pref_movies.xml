@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <ListPreference
+        android:title="@string/pref_title_sort_order"
+        android:key="@string/key_movies_sort_order"
+        android:entries="@array/sort_order_entries"
+        android:entryValues="@array/sort_order_values"
+        android:defaultValue="@string/default_value_sort_order"
+        app:iconSpaceReserved="false"
+        android:negativeButtonText=""
+        tools:summary="@string/summary_sort_order_popular"/>
+</PreferenceScreen>

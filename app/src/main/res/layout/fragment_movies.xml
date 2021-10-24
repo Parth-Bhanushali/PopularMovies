@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.MoviesFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/movies_recycler_view"
+        android:overScrollMode="never"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/container_internet_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="@dimen/internet_error_iv_width"
+            android:layout_height="@dimen/internet_error_iv_height"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/internet_error" />
+
+        <TextView
+            style="@style/MessageTextStyle"
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:text="@string/internet_error_text"
+            android:textSize="@dimen/internet_error_text_size" />
+
+        <Button
+            android:id="@+id/retry_button"
+            style="@style/RetryButtonStyle"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_favorites_not_found"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="@dimen/no_movies_iv_size"
+            android:layout_height="@dimen/no_movies_iv_size"
+            android:layout_marginBottom="8dp"
+            android:alpha="0.9"
+            android:background="@drawable/no_movies" />
+
+        <TextView
+            style="@style/MessageTextStyle"
+            android:layout_width="wrap_content"
+            android:text="@string/no_movies_text"
+            android:textAlignment="center"
+            android:textSize="@dimen/no_movies_text_size" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/loading_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+</FrameLayout>
