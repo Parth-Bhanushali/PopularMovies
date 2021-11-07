@@ -19,9 +19,10 @@ The student is required to know how to build clean and compelling user interface
 # Screenshots
 ### Phone
 <img src=demo/P_Screenshot_1.png height=500> <img src=demo/P_Screenshot_2.png height=500> <img src=demo/P_Screenshot_3.png height=500>
-<img src=demo/P_Screenshot_4.png height=500>
 
-<img src=demo/P_Screenshot_5.png height=500> <img src=demo/P_Screenshot_6.png height=500> <img src=demo/Animation_1.gif height=500> <img src=demo/Animation_2.gif height=500>
+<img src=demo/P_Screenshot_4.png height=500> <img src=demo/P_Screenshot_5.png height=500> <img src=demo/P_Screenshot_6.png height=500>
+
+<img src=demo/Animation_1.gif height=500> <img src=demo/Animation_2.gif height=500>
 
 ### Tablet
 <img src=demo/T_Screenshot_1.png height=500> <img src=demo/T_Screenshot_2.png height=500> <img src=demo/T_Screenshot_3.png height=500>
